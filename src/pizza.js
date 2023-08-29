@@ -3,6 +3,6 @@ export default function Pizza(userEnteredSize) {
     this.toppings = [];
 }
 
-Pizza.prototype.addToppings = function() {
-
+Pizza.prototype.addToppings = function(userSelectedToppings) {
+    this.toppings = userSelectedToppings;
 };
