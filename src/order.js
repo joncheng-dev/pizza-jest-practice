@@ -4,6 +4,6 @@ export default function Order() {
 }
 
 Order.prototype.assignId = function () {
-    // this.currentId += 1;
-    // return this.currentId;
+    this.currentId += 1;
+    return this.currentId;
 }
