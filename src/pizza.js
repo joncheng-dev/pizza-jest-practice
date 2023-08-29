@@ -1,3 +1,4 @@
-export default function Pizza(size) {
-
+export default function Pizza(userEnteredSize) {
+    this.size = userEnteredSize;
+    this.toppings = [];
 }
