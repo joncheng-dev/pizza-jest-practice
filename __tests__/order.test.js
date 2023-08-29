@@ -5,4 +5,10 @@ describe('Order', () => {
         let customerOne = new Order();
         expect(customerOne).toEqual({pizzas: {}, currentId: 0});
     });
+
+    test('should correctly increment the property "this.currentId" by 1, and return its value.', () => {
+        let customerOne = new Order();
+        let idResult = customerOne.assignId();
+        expect(customerOne.currentId).toEqual(idResult);
+    });
 });
