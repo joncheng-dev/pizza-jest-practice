@@ -1,4 +1,4 @@
 export default function Order() {
-//   this.pizzas = {};
-//   this.currentId = 0;
+  this.pizzas = {};
+  this.currentId = 0;
 }
