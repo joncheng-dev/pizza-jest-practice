@@ -7,4 +7,11 @@ describe('Pizza', () => {
         expect(aPizza.size).toEqual("medium");
         expect(aPizza.toppings).toEqual([]);
     });
+
+    test('method should add an array to this.toppings', () => {
+        let aPizza = new Pizza("medium");
+        let userSelectedToppings = ["mushroom", "onions"];
+        aPizza.addToppings(userSelectedToppings);
+        expect(aPizza.toppings).toEqual(["mushroom", "onions"]);        
+    });
 });
